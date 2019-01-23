@@ -1,0 +1,138 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 400px auto;
+  grid-template-areas:  "header"
+                        "main";
+}
+
+header {
+  background: var(--primary);
+  grid-area: header;
+  background-image: linear-gradient(
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0)
+    ),url(http://res.cloudinary.com/nathanjgaul-com/image/upload/f_auto,q_auto/v1527219177/blue-blur-color-932638.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: right;
+  /* max-width: 300px; */
+}
+
+.header-container {
+  position: sticky;
+  top: 0;
+  padding: 50px;
+  display: grid;
+  grid-template-rows: 1fr 100px;
+  height: auto;
+}
+
+.header-main {
+  display: grid;
+  align-self: center;
+  justify-content: center;
+}
+
+.header-main .avatar {
+  max-height: 125px;
+  max-width: 125px;
+  border-radius: 50%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header-main .header-message {
+  margin-top: 0;
+  margin-left: auto;
+  text-align: right;
+  max-width: 12rem;
+}
+
+.header-main .header-message,
+.header-footer .social svg {
+  color: var(--white);
+  opacity: 0.6;
+}
+
+.header-main .header-message .name {
+  color: var(--primary);
+}
+
+.header-footer{
+  display: grid;
+}
+
+.header-footer .social {
+  list-style: none;
+  text-align: center;
+  margin: 0;
+}
+
+.header-footer .social li {
+  display: inline;
+}
+
+.header-footer .social svg {
+  width: 2rem;
+  height: auto;
+  margin: 0 10px;
+}
+
+.header-footer .social svg:hover {
+  color: var(--primary);
+}
+
+main {
+  background: var(--white);
+  grid-area: main;
+  padding: 50px;
+}
+
+.more-articles-container {
+  display: grid;
+  grid-template-columns: 1fr;
+  align-content: center;
+  justify-items: center;
+}
+
+.article {
+  margin: 20px;
+  max-width: 500px;
+}
+
+.article a {
+  text-decoration: none;
+  color: black;
+}
+
+.article img {
+  border-radius: 6px;
+  width: 100%;
+  height: auto;
+}
+
+.article p {
+  display: block;
+  max-height: 5rem;
+  max-width: 100%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

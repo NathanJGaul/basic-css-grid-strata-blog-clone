@@ -1,0 +1,19 @@
+{
+  "name": "basic-css-grid-strata-blog",
+  "version": "1.0.0",
+  "description":
+    "Responsive CSS Grid layout made with the help of Wes Bos' CSS Grid Course.  This layout is heavily inspired by HTML5 UP's Strata layout, even to the point of plagiarism.",
+  "main": "index.html",
+  "scripts": {
+    "start": "parcel index.html --open",
+    "build": "parcel build index.html"
+  },
+  "dependencies": {
+    "typography": "latest",
+    "typography-theme-grand-view": "0.15.10"
+  },
+  "devDependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "keywords": []
+}
